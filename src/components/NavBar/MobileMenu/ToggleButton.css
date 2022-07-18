@@ -1,0 +1,31 @@
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    height: 25px;
+    width: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 1em;
+    box-sizing: border-box;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button_line {
+    width: 30px;
+    height: 2px;
+    background: white;
+}
+
+
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+  @media (max-width: 1000px) {
+    .toggle-button {
+      display: flex;
+    }
+  }
